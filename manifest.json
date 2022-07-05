@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Deleto",
+    "description": "Delete history and closes tabs containing user selected keywords in one click!",
+    "version": "1.0.0",
+    "permissions": ["history", "storage", "tabs"],
+    "options_page": "login.html",
+    "icons": {
+        "128": "logo128.png",
+        "48": "logo48.png",
+        "16": "logo16.png"
+    },
+    "action": {
+        "default_icon": "logo16.png",
+        "default_title": "Deleto - Browsing History Cleaner"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleto!</title>
+    <link rel="icon" type="image/x-icon" href="./media/logo.svg">
+    <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+    <main>
+        <img src="./media/logo.svg" class="logo" />
+        <div class="howto">
+            <header>
+                <h1>HOW IT WORKS</h1>
+                <div class="line"></div>
+            </header>
+            <div class="content">
+                <p>
+                    <ol>
+                        <li>Install the extension.</li>
+                        <li>Define keywords of links that you want to delete from your browser history.</li>
+                        <li>We recommend you to check other available settings that can help customize the extension as you wish.</li>
+                        <li>That’s all! Now ,you just have to click on the extension icon button when you want to delete unwanted links.</li>
+                    </ol>
+                </p>
+                <p style="margin-top: 10px;">
+                    <spans style="color: #416BFF; font-weight: 500;">0 Notifications</spans> and 
+                    <spans style="color: #416BFF; font-weight: 500;">0 messages</spans> are shown for 
+                    <span style="color:red; font-weight: bold;">maximum stealth</span>.
+                </p>
+            </div>            
+        </div>
+        <div class="usage">
+            <header>
+                <div class="line"></div>
+                <h1>Usage</h1>
+            </header>
+            <div class="keyword-selection">
+                <p>Enter the words you want to delete from your history</p>
+                <div class="addbar">
+                    <label>Keyword</label>
+                    <input type="text" id="keyword" />
+                    <button class="btn">Add</button>
+                </div>
+                <div class="tags">
+                    <button class="clear">Clear all keywords</button>
+                </div>
+            </div>
+            <div class="delete-behaviour">
+                <p>History deletion behaviour</p>
+                <div>
+                <input type="radio" name="behaviour" value="delete" checked/>
+                <label for="delete">Delete only the links that include keywords from history</label>
+            </div>
+            <div>
+                <input type="radio" name="behaviour" value="save" />
+                <label for="save">Save only the links that include keywords and delete the rest from history</label>
+            </div>
+            </div>
+            <div class="options">
+                <label class="history">
+                    <toggle-component></toggle-component>
+                    Delete full history                    
+                </label>
+                <label class="tab">
+                    <toggle-component></toggle-component>
+                    Close open tabs including keywords
+                </label>
+                <label class="cache">
+                    <toggle-component></toggle-component>
+                    Delete cache
+                </label>
+                <label class="cookies">
+                    <toggle-component></toggle-component>
+                    Delete cookies                    
+                </label>
+                <label class="deletepass">
+                    <toggle-component></toggle-component>
+                    Delete passwords                    
+                </label>
+                <label class="download">
+                    <toggle-component></toggle-component>
+                    Delete download history                    
+                </label>
+                <label class="autofill">
+                    <toggle-component></toggle-component>
+                    autofill from date                    
+                </label>
+                <label class="settings">
+                    <toggle-component></toggle-component>
+                    Delete site settings                  
+                </label>
+                <label class="appdata">
+                    <toggle-component></toggle-component>
+                    Delete hosted app data                    
+                </label>
+            </div>            
+        </div>
+
+        <div class="behavior">
+            <header>
+                <div class="line"></div>
+                <h1>Behavior</h1>
+            </header>
+            <div class="countdown-section">
+                <p>Set a countdown to automaticly delete the history, the keyword and options related to this feature are considered.</p>
+                <div class="count-opt">
+                    <div class="countdown">
+                        <label class="activatecount">
+                            <toggle-component></toggle-component>
+                            Activate countdown
+                        </label>
+                        <div class="counter">
+                            <input class="timer" id="hours" placeholder="00"></input>  :  <input class="timer" id="minutes" placeholder="00"></input> 
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="freeze-section">
+                <p>Enable this option to stop your browser from recording history.</p>
+                <label class="freeze">
+                    <toggle-component></toggle-component>
+                    Freeze history
+                </label>
+            </div>
+            <div class="display">
+                <p>Display features</p>
+                <div class="display-opt">                
+                    <label class="notif">
+                        <toggle-component></toggle-component>
+                        Display notification message when cleaning the history
+                    </label>
+                    <label class="panel">
+                        <toggle-component></toggle-component>
+                        Display tool panel when clicking on the extrantion icon
+                    </label>
+                </div>
+            </div>
+            <div class="appearance">
+                <p>Appearance</p>
+                <div class="appearance-opt">
+                    <label class="default">
+                        <input type="radio" name="appearance" value="default" checked>
+                        System default
+                    </label>
+                    <label class="light">
+                        <input type="radio" name="appearance" value="light">
+                        Light
+                    </label>
+                    <label class="dark">
+                        <input type="radio" name="appearance" value="dark">
+                        Dark
+                    </label>
+                    <label class="blue">
+                        <input type="radio" name="appearance" value="blue">
+                        Deep blue
+                    </label>
+            
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="security">
+            <header>
+                <div class="line"></div>
+                <h1>Security</h1>
+            </header>
+            <div class="passoptions">
+                <p>Set a password to hide settings from unwanted visitors</p>
+                <label class="usepass">
+                    <toggle-component></toggle-component>
+                    Use Password                    
+                </label>
+            </div>
+            <div class="pass">
+                <label>Set a password</label> <input type="password" id="password" />
+                <label>Confirm the password</label> <input type="password" id="password-conf" />
+            </div>
+            <button class="btn btn-save">Save</button>
+        </div>
+        <div class="donation">
+            <header>
+                <div class="line"></div>
+                <h1>Support Us</h1>
+            </header>
+            <p>
+                Help us improve this tool and create others.<br/>
+                If you appreciate our work feel free to donate. Any contribution is helpful!
+            </p>
+            <div class="donation-links">
+                <p>Click on the icons to display the donation address.</p>
+                <div class="icons">
+                    <img src="./media/paypal.svg" alt="Paypal" id="paypal">
+                    <img src="./media/bitcoin.svg" alt="Bitcoin" id="bitcoin">
+                    <img src="./media/ethereum.svg" alt="Ethereum" id="ethereum">
+                </div>                
+            </div>
+            <div class="donation-address">
+                <input type="text" id="donation" readonly /> 
+                <img />   
+            </div>   
+            
+        </div>
+    </main>
+
+    <script type="module" src="./options.js"></script>    
+</body>
+</html>
